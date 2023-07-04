@@ -1,0 +1,80 @@
+.about_section_image{
+    border-radius: 50%;
+    overflow: hidden;
+    transform: skew(15deg);
+    transition: var(--transition);
+}
+.about_section_image:nth-child(2){
+    transform: skew(-15deg);
+}
+
+.about_section_image:hover{
+    transform: skew(0deg);
+}
+
+.about_section_content h1{
+    margin-bottom: 2rem;  
+}
+.about_section_content p{
+    margin-bottom: 1rem;
+}
+.about_story{
+    margin-top: 4rem;
+}
+.about_story,
+.about_vision,
+.about_mission{
+    margin-bottom: 6.5rem;
+}
+
+.about_story_container,
+.about_mission_container{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+   
+}
+
+.about_vision_container{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 10%;
+}
+
+
+@media screen and (max-width:1200px) {
+    .about_section_image{
+        width: 60%;
+
+    }
+    .about_section_content h1{
+        margin-bottom: 1.2rem;
+        font-size: 1.8rem;
+    }
+    .about_story_container,
+    .about_vision_container,
+    .about_mission_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about_vision .about_section_image{
+        grid-row: 1;
+    }
+    .about_story{
+        margin-top: 2rem;
+    }
+}
+  
+@media screen and (max-width:600px) {
+    .about_story_container,
+    .about_vision_container,
+    .about_mission_container{
+        gap: 1.3rem;
+    }
+    .about_story,
+    .about_vision,
+    .about_mission{
+        margin-bottom: 3.5rem;
+}
+    
+}

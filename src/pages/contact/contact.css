@@ -1,0 +1,128 @@
+.contact{
+    padding-top: 5rem;
+}
+.contact_container{
+    display: grid;
+    place-items: center;
+}
+.contact_wrapper{
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+.contact_wrapper a{
+    background: var(--color-gray-400);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+.contact_wrapper :hover{
+    background: transparent;
+    border-color: var(--color-gray-100);
+    transform: translateY(-3px);
+}
+
+
+.appointments_container{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    gap: 6%;
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+}
+.appointments_container h2, p{
+    width: 100%!important;
+}
+.appointments_container p{
+    color: rgb(177, 173, 173);
+    padding-bottom: 2rem;
+
+}
+
+.appointments_container article{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    
+}
+.appointments_container article small{
+    color: rgb(177, 173, 173);
+}
+.info_icon{
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.8rem;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+}
+.form_group label{
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+    font-weight: 600;
+}
+.form_group input, textarea, select{
+    background: var(--color-gray-400);
+    color: white;
+    padding: 0.85rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    resize: none;
+    font-family: cursive;
+    appearance: none;
+}
+.form_group input::placeholder{
+    color: white;
+}
+.form_group textarea::placeholder{
+    color: white;
+}
+.form_btn{
+    color: var(--color-gray-100);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    cursor: pointer;
+    background: var(--color-gray-400);
+    transition: var(--transition);
+    border-radius: 1.5rem;
+    border-color: white;
+}
+
+
+/* ///====== MEDIA QUERIES (SMALL DEVICES) ======// */
+@media screen and (max-width: 600px){
+    .contact_wrapper{
+        gap: 1.5rem;
+    }   
+    .contact_wrapper a{
+        padding: 1rem;
+        font-size: 1.2rem;
+        border: 1.1rem;
+    }
+
+    .appointments_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        margin-bottom: 6rem;     
+    }
+    .text{
+        margin-bottom: -4.5rem;
+    }
+}

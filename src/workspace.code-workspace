@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "javascriptClasses",
+			"path": "..\\..\\javascriptClasses"
+		},
+		{
+			"name": "my-project",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "javascriptClasses"
+	}
+}
